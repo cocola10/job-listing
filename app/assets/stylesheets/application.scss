@@ -25,7 +25,6 @@
  .navbar-default {
      background-color: #F5F5F5;//背景颜色
      border-color: #F5F5F5;//边框色
-     margin-bottom: 0;//底部 margin 不撑开距离
  }
 
  .navbar-brand > img {
@@ -77,7 +76,7 @@
    background-repeat: no-repeat;
    background-size: cover;
    padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
-   margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+   margin: -20px -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
    border-radius: 0;//圆角为0
  }
 
@@ -267,4 +266,11 @@ footer {
 footer .footer-below {
     padding: 15px 0;
     background-color: #E0E0E0;
+}
+
+//-------Common---------
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
